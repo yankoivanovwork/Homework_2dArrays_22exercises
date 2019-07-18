@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.deps.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.runtimeconfig.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.runtimeconfig.dev.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.pdb
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.AssemblyInfo.cs
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad13\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad13.pdb
