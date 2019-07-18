@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays.deps.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays.runtimeconfig.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays.runtimeconfig.dev.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays.pdb
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays.AssemblyInfo.cs
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays.pdb

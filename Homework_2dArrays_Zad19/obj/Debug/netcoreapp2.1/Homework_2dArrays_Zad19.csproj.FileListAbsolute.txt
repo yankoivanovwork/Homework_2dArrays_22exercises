@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.deps.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.runtimeconfig.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.runtimeconfig.dev.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.pdb
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.AssemblyInfo.cs
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad19\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad19.pdb
