@@ -10,17 +10,18 @@ namespace Homework_2dArrays_Zad20
 
             if (int.TryParse(Console.ReadLine(), out matrixRank) & matrixRank >= 2)
             {
+                ///triangleIndex
+                /// 0 nad glaven diagonal
+                /// 1 pod glaven diagonal
+                /// 2 nad glaven ogledalen diagonal
+                /// 3 pod glaven ogledalen diagonal
+
                 int triangleIndex = -1;
                 int lowestNumber = int.MaxValue;
                 int numberCounter = 1;
                 int[,] matrixNumbers = new int[matrixRank, matrixRank];
                 int[,] resultTriangleInMatrix = FillMatrixWithZeros(matrixRank);
 
-                ///sumForEachTriangle index
-                ///0 nad glaven diagonal
-                ///1 pod glaven diagonal
-                ///2 nad glaven ogledalen diagonal
-                ///3 pod glaven ogledalen diagonal
                 int[] sumForEachTriangle = new int[4];
 
                 Console.WriteLine("Матрица: ");
@@ -34,52 +35,11 @@ namespace Homework_2dArrays_Zad20
                     }
                 }
 
-                //sum za triangle nad glaven diagonal
-                for (int i = 0; i < matrixRank; i++)
-                {
-                    for (int j = 0; j < matrixRank - i; j++)
-                    {
-                        sumForEachTriangle[0] += matrixNumbers[j, j + i];
-                    }
-                }
+                sumForEachTriangle[0] = SumForTriangleAboveOrBelowMainDiagonal(matrixNumbers, 0);
+                sumForEachTriangle[1] = SumForTriangleAboveOrBelowMainDiagonal(matrixNumbers, 1);
 
-                //sum za triangle pod glaven diagonal
-                for (int i = 0; i < matrixRank; i++)
-                {
-                    for (int j = 0; j < matrixRank - i; j++)
-                    {
-                        sumForEachTriangle[1] += matrixNumbers[j + i, j];
-                    }
-                }
-
-                //sum za triangle nad glaven ogledalen diagonal
-                for (int i = matrixRank - 1; i >= 0; i--)
-                {
-                    for (int j = 0; j < (i + 1) ; j++)
-                    {
-                        sumForEachTriangle[2] += matrixNumbers[j, i - j];
-                    }
-                }
-
-                //sum za triangle pod glaven ogledalen diagonal
-                for (int i = matrixRank - 1; i >= 0; i--)
-                {
-                    for (int j = 0; j < (i + 1); j++)
-                    {
-                        if (i == 1)
-                        {
-                            sumForEachTriangle[3] += matrixNumbers[j + i, 2 * i - j];
-                            continue;
-                        }
-                        else if (i == 0)
-                        {
-                            sumForEachTriangle[3] += matrixNumbers[2, 2];
-                            continue;
-                        }
-
-                        sumForEachTriangle[3] += matrixNumbers[i - j, j];
-                    }
-                }
+                sumForEachTriangle[2] = SumForTriangleAboveOrBelowReflectedMainDiagonal(matrixNumbers, 2);
+                sumForEachTriangle[3] = SumForTriangleAboveOrBelowReflectedMainDiagonal(matrixNumbers, 3);
 
                 for (int i = 0; i < 4; i++)
                 {
@@ -92,19 +52,19 @@ namespace Homework_2dArrays_Zad20
 
                 if (triangleIndex == 0)
                 {
-                    resultTriangleInMatrix = TriangleAboveMainDiagonal(matrixNumbers);
+                    resultTriangleInMatrix = TriangleMainDiagonal(matrixNumbers, true);
                 }
                 else if (triangleIndex == 1)
                 {
-                    resultTriangleInMatrix = TriangleBelowMainDiagonal(matrixNumbers);
+                    resultTriangleInMatrix = TriangleMainDiagonal(matrixNumbers, false);
                 }
                 else if (triangleIndex == 2)
                 {
-                    resultTriangleInMatrix = TriangleAboveReflectedMainDiagonal(matrixNumbers);
+                    resultTriangleInMatrix = TriangleReflectedMainDiagonal(matrixNumbers, true);
                 }
                 else
                 {
-                    resultTriangleInMatrix = TriangleBelowReflectedMainDiagonal(matrixNumbers);
+                    resultTriangleInMatrix = TriangleReflectedMainDiagonal(matrixNumbers, false);
                 }
 
                 for (int i = 0; i < matrixRank; i++)
@@ -137,7 +97,62 @@ namespace Homework_2dArrays_Zad20
             return matrix;   
         }
 
-        private static int[,] TriangleAboveMainDiagonal(int[,] matrixNumbers)
+        private static int SumForTriangleAboveOrBelowMainDiagonal(int[,] matrixNumbers, int triangleIndex)
+        {
+            int sumForTriangle = 0;
+
+            for (int i = 0; i < matrixNumbers.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrixNumbers.GetLength(1) - i; j++)
+                {
+                    if (triangleIndex == 0)
+                    {
+                        sumForTriangle += matrixNumbers[j, j + i];
+                    }
+                    else
+                    {
+                        sumForTriangle += matrixNumbers[j + i, j];
+                    }
+                }
+            }
+
+            return sumForTriangle;
+        }
+
+        private static int SumForTriangleAboveOrBelowReflectedMainDiagonal(int[,] matrixNumbers, int triangleIndex)
+        {
+            int sumForTriangle = 0;
+
+            for (int i = matrixNumbers.GetLength(0) - 1; i >= 0; i--)
+            {
+                for (int j = 0; j < (i + 1); j++)
+                {
+                    if (triangleIndex == 2)
+                    {
+                        sumForTriangle += matrixNumbers[j, i - j];
+                    }
+                    else
+                    {
+                        if (i == 1)
+                        {
+                            sumForTriangle += matrixNumbers[j + i, 2 * i - j];
+                            continue;
+                        }
+                        else if (i == 0)
+                        {
+                            sumForTriangle += matrixNumbers[2, 2];
+                            continue;
+                        }
+
+                        sumForTriangle += matrixNumbers[i - j, j];
+                    }
+                }
+            }
+
+            return sumForTriangle;
+        }
+
+        private static int[,] TriangleMainDiagonal(int[,] matrixNumbers, bool triangleAbove)
         {
             int[,] resultMatrix = new int[matrixNumbers.GetLength(0), matrixNumbers.GetLength(1)];
 
@@ -145,29 +160,21 @@ namespace Homework_2dArrays_Zad20
             {
                 for (int j = 0; j < matrixNumbers.GetLength(1) - i; j++)
                 {
-                    resultMatrix[j, j + i] = matrixNumbers[j, j + i];
+                    if (triangleAbove)
+                    {
+                        resultMatrix[j, j + i] = matrixNumbers[j, j + i];
+                    }
+                    else
+                    {
+                        resultMatrix[j + i, j] = matrixNumbers[j + i, j];
+                    }
                 }
             }
 
             return resultMatrix;
         }
 
-        private static int[,] TriangleBelowMainDiagonal(int[,] matrixNumbers)
-        {
-            int[,] resultMatrix = new int[matrixNumbers.GetLength(0), matrixNumbers.GetLength(1)];
-
-            for (int i = 0; i < matrixNumbers.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrixNumbers.GetLength(1) - i; j++)
-                {
-                    resultMatrix[j + i, j] = matrixNumbers[j + i, j];
-                }
-            }
-
-            return resultMatrix;
-        }
-
-        private static int[,] TriangleAboveReflectedMainDiagonal(int[,] matrixNumbers)
+        private static int[,] TriangleReflectedMainDiagonal(int[,] matrixNumbers, bool triangleAbove)
         {
             int[,] resultMatrix = new int[matrixNumbers.GetLength(0), matrixNumbers.GetLength(1)];
 
@@ -175,33 +182,25 @@ namespace Homework_2dArrays_Zad20
             {
                 for (int j = 0; j < (i + 1); j++)
                 {
-                    resultMatrix[j, i - j] = matrixNumbers[j, i - j];
-                }
-            }
-
-            return resultMatrix;
-        }
-
-        private static int[,] TriangleBelowReflectedMainDiagonal(int[,] matrixNumbers)
-        {
-            int[,] resultMatrix = new int[matrixNumbers.GetLength(0), matrixNumbers.GetLength(1)];
-
-            for (int i = matrixNumbers.GetLength(0) - 1; i >= 0; i--)
-            {
-                for (int j = 0; j < (i + 1); j++)
-                {
-                    if (i == 1)
+                    if (triangleAbove)
                     {
-                        resultMatrix[j + i, 2 * i - j] = matrixNumbers[j + i, 2 * i - j];
-                        continue;
+                        resultMatrix[j, i - j] = matrixNumbers[j, i - j];
                     }
-                    else if (i == 0)
+                    else
                     {
-                        resultMatrix[2, 2] = matrixNumbers[2, 2];
-                        continue;
-                    }
+                        if (i == 1)
+                        {
+                            resultMatrix[j + i, 2 * i - j] = matrixNumbers[j + i, 2 * i - j];
+                            continue;
+                        }
+                        else if (i == 0)
+                        {
+                            resultMatrix[2, 2] = matrixNumbers[2, 2];
+                            continue;
+                        }
 
-                    resultMatrix[i - j, j] = matrixNumbers[i - j, j];
+                        resultMatrix[i - j, j] = matrixNumbers[i - j, j];
+                    }
                 }
             }
 
