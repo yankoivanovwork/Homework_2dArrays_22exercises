@@ -36,8 +36,8 @@ namespace Homework_2dArrays_Zad20
 
                 sumForEachTriangle[0] = SumForTriangleAboveOrBelowMainDiagonal(matrixNumbers, 0);
                 sumForEachTriangle[1] = SumForTriangleAboveOrBelowMainDiagonal(matrixNumbers, 1);
-                sumForEachTriangle[2] = SumForTriangleAboveOrBelowReflectedMainDiagonal(matrixNumbers, 2);
-                sumForEachTriangle[3] = SumForTriangleAboveOrBelowReflectedMainDiagonal(matrixNumbers, 3);
+                sumForEachTriangle[2] = SumForTriangleAboveOrBelowAntidiagonal(matrixNumbers, 2);
+                sumForEachTriangle[3] = SumForTriangleAboveOrBelowAntidiagonal(matrixNumbers, 3);
 
                 for (int i = 0; i < 4; i++)
                 {
@@ -53,9 +53,9 @@ namespace Homework_2dArrays_Zad20
                 else if (triangleIndex == 1)
                     resultTriangleInMatrix = TriangleMainDiagonal(matrixNumbers, false);
                 else if (triangleIndex == 2)
-                    resultTriangleInMatrix = TriangleReflectedMainDiagonal(matrixNumbers, true);
+                    resultTriangleInMatrix = TriangleAntidiagonal(matrixNumbers, true);
                 else
-                    resultTriangleInMatrix = TriangleReflectedMainDiagonal(matrixNumbers, false);
+                    resultTriangleInMatrix = TriangleAntidiagonal(matrixNumbers, false);
 
                 for (int i = 0; i < matrixRank; i++)
                 {
@@ -105,7 +105,7 @@ namespace Homework_2dArrays_Zad20
             return sumForTriangle;
         }
 
-        private static int SumForTriangleAboveOrBelowReflectedMainDiagonal(int[,] matrixNumbers, int triangleIndex)
+        private static int SumForTriangleAboveOrBelowAntidiagonal(int[,] matrixNumbers, int triangleIndex)
         {
             int sumForTriangle = 0;
 
@@ -154,7 +154,7 @@ namespace Homework_2dArrays_Zad20
             return resultMatrix;
         }
 
-        private static int[,] TriangleReflectedMainDiagonal(int[,] matrixNumbers, bool triangleAbove)
+        private static int[,] TriangleAntidiagonal(int[,] matrixNumbers, bool triangleAbove)
         {
             int[,] resultMatrix = new int[matrixNumbers.GetLength(0), matrixNumbers.GetLength(1)];
 
