@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays_Zad7
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int matrixRank = 0;
 

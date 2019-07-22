@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.deps.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.runtimeconfig.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.runtimeconfig.dev.json
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.pdb
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.AssemblyInfo.cs
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.dll
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays_Zad11\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad11.pdb

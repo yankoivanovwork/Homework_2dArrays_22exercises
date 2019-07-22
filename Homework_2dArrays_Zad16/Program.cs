@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays_Zad16
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int selectedIndex = -1;
             char selectedChar;

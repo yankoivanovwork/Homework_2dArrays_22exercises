@@ -2,9 +2,9 @@
 
 namespace Homework_2dArrays_Zad13
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int matrixRank = 0;
 

@@ -3,6 +3,7 @@ C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcore
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.runtimeconfig.dev.json
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.dll
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\bin\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.pdb
+C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.csprojAssemblyReference.cache
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\Homework_2dArrays\Homework_2dArrays\obj\Debug\netcoreapp2.1\Homework_2dArrays_Zad1.AssemblyInfo.cs

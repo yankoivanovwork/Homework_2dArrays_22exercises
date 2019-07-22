@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays_Zad22
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //zad22
             int startNumber = 1;

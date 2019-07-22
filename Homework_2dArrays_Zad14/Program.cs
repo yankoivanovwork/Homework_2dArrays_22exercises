@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays_Zad14
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Въведете числа за масив 1");
             int[] arrayNumbersOne = Console.ReadLine().Split().Select(int.Parse).ToArray();

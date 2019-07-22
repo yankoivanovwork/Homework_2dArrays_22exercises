@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays_Zad10
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int selectedIndex = -1;
             int selectedAsciiChar = char.MaxValue;

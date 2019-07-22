@@ -2,9 +2,9 @@
 
 namespace Homework_2dArrays_Zad11
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[,] array2d = new int[,] { { 1, 2 }, { 3, 4 } };
             int[,] array2dThreeRow = new int[,] { { 1, 12, 3 }, { 44, 5, 6 }, { 7, 21, 9 } };

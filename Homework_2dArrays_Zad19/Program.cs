@@ -2,13 +2,13 @@
 
 namespace Homework_2dArrays_Zad19
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int matrixRank = 0;
 
-            if (int.TryParse(Console.ReadLine(), out matrixRank))
+            if (int.TryParse(Console.ReadLine(), out matrixRank) & matrixRank >= 2)
             {
                 int zeroCount = 0;
                 int numberCounter = 1;

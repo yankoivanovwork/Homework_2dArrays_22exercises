@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Homework_2dArrays
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int lowestNumberIndex = 0;
             int lowestNumber = int.MaxValue;

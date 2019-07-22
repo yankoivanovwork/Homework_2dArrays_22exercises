@@ -2,9 +2,9 @@
 
 namespace Homework_2dArrays_Zad9
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Въведете текст на един ред: ");
             string reverseLine = Console.ReadLine();
